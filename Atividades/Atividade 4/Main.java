@@ -24,7 +24,7 @@ public class Main {
 		a1.horaSaida(18);
 		p1.horaSaida(20);
 		
-	//Criando departamento e adicionando funcionarios 
+	
 	Departamento dptoTI = new Departamento<>();
 	dptoTI.adicionarGerente(g1);
 	dptoTI.adicionarFuncionario(g1);
@@ -37,7 +37,7 @@ public class Main {
 	String formato = "%1$-5s %2$-40s %3$-21s %4$-15s";
 
 	
-    // listando as informações sobre os funcionarios
+    
 	System.out.println("Funcionarios do departamento:");
 	System.out.printf(formato, "ID", " | NOME" , " | HORA DE ENTRADA", " | SAL�RIO (R$)");
     List<Funcionario> funcionarios = dptoTI.listarFuncionarios();
@@ -53,7 +53,7 @@ public class Main {
     }
     
 	
- // lista os funcionarios atrasados, considerando o horario de entrada sendo 7h
+ 
     List<Funcionario> atrasados = dptoTI.listarAtrasados(7);
     System.out.println("\nFuncionarios que chegaram atrasados:");
     for (Funcionario atrasado : atrasados) {
