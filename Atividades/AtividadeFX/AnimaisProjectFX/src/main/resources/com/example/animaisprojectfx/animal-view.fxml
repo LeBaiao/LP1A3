@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.animaisprojectfx.AnimalAppController">
+    <center>
+        <VBox spacing="10" padding="10">
+            <ComboBox fx:id="comboBox" />
+            <Button text="Mostrar" onAction="#showAnimalDetails" />
+            <TextArea fx:id="textArea" editable="false" />
+        </VBox>
+    </center>
+</BorderPane>
